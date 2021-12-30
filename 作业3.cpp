@@ -7,18 +7,17 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+int y=0;
 int f(int n)
 {
 	int x=0;
 	char a[100];
-	for(int i=0;i<=n;i++)
-	{
-		sprintf(a,"%d",i);
+		sprintf(a,"%d",n);
 		for(int j=0;j<strlen(a);j++)
 		  if(a[j]=='1')
 		    x++;
-	}
-	return x;
+    y+=x;		    
+	return y;
 }
 int main()
 {
