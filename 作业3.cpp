@@ -16,7 +16,7 @@ int f(int n)
 		for(int j=0;j<strlen(a);j++)
 		  if(a[j]=='1')
 		    x++;
-    y+=x;		    
+    	y+=x;		    
 	return y;
 }
 int main()
